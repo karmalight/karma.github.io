@@ -1,0 +1,170 @@
+* {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+    margin-top: 50px;
+}
+
+article,
+header,
+footer {
+    max-width: 100vw;
+}
+
+header,
+section {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+header {
+    border-bottom: 2px dashed darkblue;
+    text-align: center;
+    color: blue;
+}
+
+section {
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+h2 {
+    margin: 2px;
+    padding: 10px;
+    color: red;
+    font-size: 150%;
+    text-align: center
+}
+
+img {
+    border-radius: 70%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+h2::before,
+h2::after {
+    content: "===";
+    color: purple
+}
+
+.p_title {
+    color: brown;
+    text-align: center;
+}
+
+h4 {
+    color: green;
+    text-align: center;
+    text-decoration: underline
+}
+
+footer {
+    background-color: burlywood;
+    border: 1px dotted green;
+    width: 80%;
+    Margin: auto;
+    border-left: none;
+    border-right: none;
+}
+
+footer section {
+    border: none;
+}
+
+footer img {
+    width: 5%;
+    height: 5%;
+}
+
+nav li {
+    padding: 5px;
+    display: inline-grid;
+}
+
+header nav {
+    position: fixed;
+    background-color: lightslategray;
+    top: 0.5em;
+    right: 0.5em;
+    opacity: 0.6;
+    padding: 0em 1em 0em 1em;
+}
+
+#u1 a:link,
+#u1 a:visited {
+    color: white;
+    font-weight: bolder;
+}
+
+#u1 li:hover {
+    background-color: gainsboro;
+}
+
+#u1 a:hover {
+    text-decoration: none;
+    color: red
+}
+
+.p_list {
+    float: left;
+    width: 260px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.p_list li,
+.desc {
+    text-align: left
+}
+
+.p_list_footerclearfix {
+    clear: both;
+    text-align: center;
+}
+
+.p_title {
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+#n1 {
+    text-align: center;
+    background-color: black;
+    opacity: 0.25;
+    width: 100%;
+}
+
+#n1 li {
+    padding: 10px;
+    display: inline-block;
+}
+
+#u2 a:link,
+#u2 a:visited {
+    color: white;
+    font-size: 150%;
+}
+
+#u2 li:hover {
+    background-color: gainsboro;
+}
+
+#u2 a:hover {
+    text-decoration: none;
+    color: red
+}
