@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>精靈遊俠</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif;
+    }
+    
+    .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+            <a href="狂郎勇士.html" class="w3-bar-item w3-button w3-theme-l1">狂郎勇士</a>
+            <a href="夜光.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">夜光</a>
+            <a href="龍魔導士.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">龍魔導士</a>
+            <a href="精靈遊俠.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">精靈遊俠</a>
+            <a href="幻影俠盜.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">幻影俠盜</a>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <h4 class="w3-bar-item"><b>Menu</b></h4>
+        <a class="w3-bar-item w3-button w3-hover-black" href="index.html">首頁</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="1111.html">相片</a>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">新手技能</h1>
+                <p>
+                    ●<img src="img(M)/1.png" alt="Jugglypuff" width="10%" height="10%">精靈的回復:每4秒，利用自然界中淨化的能量，持續恢復HP和 MP 5%
+                    <br>●<img src="img(M)/2.png" alt="Jugglypuff" width="10%" height="10%">時髦的移動:可藉由在天梯或繩索快速向上移動。
+                    <br>●<img src="img(M)/3.png" alt="Jugglypuff" width="10%" height="10%">王的資格:永久提高攻擊速度1階段、移動速度10、跳躍力20、魅力等級30
+                    <br>●<img src="img(M)/4.png" alt="Jugglypuff" width="10%" height="10%">精靈的祝福:永久打怪經驗值+15%
+                </p>
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
+
+        <div class="w3-row">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">一轉技能</h1>
+                <p>
+                    ●<img src="img(M)/5.png" alt="Jugglypuff" width="10%" height="10%">急速雙擊:消耗 MP14，最多對 3 名敵人發射 125% 傷害的弓箭 3 個
+                    <br>●<img src="img(M)/6.png" alt="Jugglypuff" width="10%" height="10%">潛在力量:移動速度增加30，最大移動速度上限增加值至165，總傷害增加20%，以20%機率迴避敵人的攻擊
+                    <br>●<img src="img(M)/7.png" alt="Jugglypuff" width="10%" height="10%">藝術跳躍:消耗 MP10，跳躍一定距離
+                    <br>●<img src="img(M)/8.png" alt="Jugglypuff" width="10%" height="10%">鋒利瞄準:爆擊機率提升 40%
+                </p>
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
+        <div class="w3-row">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">二轉技能</h1>
+                <p>
+                    ●<img src="img(M)/9.png" alt="Jugglypuff" width="10%" height="10%">精準光速神弩:消耗 MP24 ，最多對 6 名敵人，用 120% 的傷害進行 4 次貫通攻擊
+                    <br>●<img src="img(M)/10.png" alt="Jugglypuff" width="10%" height="10%">昇龍刺擊:消耗 MP25，最多對 8 名敵人，用 210% 傷害突進，以 220% 的傷害踢飛。 攻擊漂浮狀態的敵人時，追加傷害 30%
+                    <br>快速推開前方多數敵人後，使之浮到空中。攻擊浮空狀態的敵人時可造成追加傷害。 按
+                    <img src="img(M)/下.png" alt="Jugglypuff" width="10%" height="10%">+<img src="img(M)/10.png" alt="Jugglypuff" width="10%" height="10%">使用時，可以直接使用第二段突刺
+                    <br>●<img src="img(M)/11.png" alt="Jugglypuff" width="10%" height="10%">最終一擊:消耗 MP16，最多對 8 名敵人，以 85% 傷害進行 4 次攻擊
+                    <br>●<img src="img(M)/12.png" alt="Jugglypuff" width="10%" height="10%">雙弩槍推進器:消耗 MP11，200 秒內提升攻擊速度
+                    <br>●<img src="img(M)/13.png" alt="Jugglypuff" width="10%" height="10%">靈魂灌注:提升傷害 30%、爆擊機率 15%
+                    <br>●<img src="img(M)/14.png" alt="Jugglypuff" width="10%" height="10%">雙弩槍精通:提升雙弩槍系列武器的熟練度 50%，命中值 120
+                    <br>●<img src="img(M)/15.png" alt="Jugglypuff" width="10%" height="10%">終極攻擊:雙弩槍:以 40% 機率發動 2 次 75% 傷害的終極攻擊
+                    <br>●<img src="img(M)/16.png" alt="Jugglypuff" width="10%" height="10%">體能訓練:永久增加力量 30、敏捷性 30
+                </p>
+
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">三轉技能</h1>
+                <p>
+                    ●<img src="img(M)/17.png" alt="Jugglypuff" width="10%" height="10%">光速雙擊:消耗 MP35，對最多 5 個敵人發射 260% 傷害的箭矢 4 發 (四轉會強化到380%*4) 以 80% 機率使敵人在 6 秒內陷入暈倒狀態，對暈倒狀態的敵人額外產生 20% 傷害
+                    <br>可與<img src="img(M)/10.png" alt="Jugglypuff" width="10%" height="10%"> <img src="img(M)/28.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/19.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/27.png"
+                        alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/38.png" alt="Jugglypuff" width="10%" height="10%">連技
+                    <br>●<img src="img(M)/18.png" alt="Jugglypuff" width="10%" height="10%">落葉旋風射擊:消耗 MP45，最多對 8 名敵人，以 260% 傷害進行 4 次攻擊 (四轉強化至390%*4)
+                    <br>可與<img src="img(M)/20.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/29.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/27.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/38.png"
+                        alt="Jugglypuff" width="10%" height="10%">連技
+                    <br>●<img src="img(M)/19.png" alt="Jugglypuff" width="10%" height="10%">獨角獸射擊:消耗 MP62，對最多 8 個敵人造成 315% 的爆擊傷害 5 次。 (四轉強化至415%*5) 對象會以 100% 機率在 30 秒內產生額外+30%傷害的DEBUFF效果
+                    <br>可與<img src="img(M)/10.png" alt="Jugglypuff" width="10%" height="10%"> <img src="img(M)/28.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/38.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/27.png"
+                        alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/17.png" alt="Jugglypuff" width="10%" height="10%">連技
+                    <br>●<img src="img(M)/20.png" alt="Jugglypuff" width="10%" height="10%">旋風突進:消耗 MP45，最多對 6 名敵人，以 260% 傷害進行 4 次攻擊 (四轉強化至430%*4)
+                    <br>可與<img src="img(M)/10.png" alt="Jugglypuff" width="10%" height="10%"> <img src="img(M)/28.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/19.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/27.png"
+                        alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/38.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/18.png" alt="Jugglypuff" width="10%" height="10%">連技
+                    <br>●<img src="img(M)/21.png" alt="Jugglypuff" width="10%" height="10%">騰空踢擊:消耗 MP28，最多可對 8 個敵人造成 105% 的傷害，施放 6 次攻擊。 被動效果： 昇龍刺擊傷害提升 15%
+                    <br>可與<img src="img(M)/20.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/18.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/27.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/38.png"
+                        alt="Jugglypuff" width="10%" height="10%">連技
+                    <br>●<img src="img(M)/22.png" alt="Jugglypuff" width="10%" height="10%">依古尼斯咆哮:使用連結技能時，最終傷害+2% , 最多疊加 10 次(20%)。維持 15 秒(不受加持影響)。20% 機率迴避、最終傷害+15%
+                    <br>●<img src="img(M)/23.png" alt="Jugglypuff" width="10%" height="10%">水之盾:消耗 MP:100， 180 秒內吸收最多 30% 的傷害，啟動增加狀態異常耐性和所有屬性耐性 25 的水之保護膜。
+                    <br>●<img src="img(M)/24.png" alt="Jugglypuff" width="10%" height="10%">元素騎士: MP:60 在 3名精靈中隨機挑擇一名召喚 210 秒
+                    <br>冷氣精靈： 用 385% 攻擊，將目標以 90% 機率陷入 5 秒的結冰
+                    <br>火焰精靈： 用 385% 攻擊，目標在 5 秒內，每 1 秒持續受到 110% 的傷害
+                    <br>黑暗精靈： 用 485% 攻擊
+
+                </p>
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">四轉技能</h1>
+                <p>
+                    ●<img src="img(M)/25.png" alt="Jugglypuff" width="10%" height="10%">進階光速雙擊:MP35，對最多 8 個敵人發射 380% 傷害的箭矢 4 發，以 80% 機率使敵人在 6 秒內陷入暈倒狀態，對暈倒狀態的敵人額外產生 20% 傷害
+                    <br>●<img src="img(M)/26.png" alt="Jugglypuff" width="10%" height="10%">伊修塔爾之環:消耗 MP:10，對前方敵人，每一發以 220% 傷害進行 2 次攻擊 被動效果： 光速雙擊傷害提升 100%
+                    <br>●<img src="img(M)/27.png" alt="Jugglypuff" width="10%" height="10%">傳說之槍:消耗 MP60 , 最多對 12 個敵人以 610% 進行爆擊攻擊 3 次。 30 秒內 敵人防禦力 -30% 的debuff。
+                    <br>可與<img src="img(M)/20.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/18.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/29.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/38.png"
+                        alt="Jugglypuff" width="10%" height="10%">連技
+                    <br>被動效果：落葉旋風射擊傷害提升 130%
+                    <br>●<img src="img(M)/28.png" alt="Jugglypuff" width="10%" height="10%">閃電之鋒:最多可對 8 個敵人以 420% 傷害攻擊 3 次並往前方移動。 攻擊BOSS時，30 秒內 伊修塔爾之環 傷害+20%
+                    <br>可與<img src="img(M)/10.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/18.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/27.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/17.png"
+                        alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/19.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/38.png" alt="Jugglypuff" width="10%" height="10%">連技
+                    <br>被動效果：旋風突進傷害提升 170%
+                    <br>●<img src="img(M)/29.png" alt="Jugglypuff" width="10%" height="10%">旋風月光翻轉:消耗 MP70 , 最多可對 8 個敵人以 300% 傷害攻擊 6 次。 被動效果：昇龍刺擊, 騰空踢擊的傷害增加 195%
+                    <br>可與<img src="img(M)/20.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/18.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/27.png" alt="Jugglypuff" width="10%" height="10%">連技
+                    <br>●<img src="img(M)/30.png" alt="Jugglypuff" width="10%" height="10%">遠古意志:消耗 MP:80， 210 秒內提高 %攻30%，體力 1500 被動效果： 提高依古尼斯咆哮的迴避機率 20%
+                    <br>●<img src="img(M)/31.png" alt="Jugglypuff" width="10%" height="10%">進階雙弩槍精通:雙弩槍系列武器的熟練度提升至 70%，物理攻擊力 +30，爆擊傷害增加 10%
+                    <br>●<img src="img(M)/32.png" alt="Jugglypuff" width="10%" height="10%">破防射擊:無視敵人防禦 25%，最終傷害+20%，暴擊傷害增加 15%，Boss傷害增加 15%
+                    <br>●<img src="img(M)/33.png" alt="Jugglypuff" width="10%" height="10%">進階終極攻擊:永久增加攻擊力 20、命中率 10%，攻擊時以 75% 機率發動 2 次 120% 傷害終極攻擊
+                    <br>●<img src="img(M)/34.png" alt="Jugglypuff" width="10%" height="10%">精神迴避:耗MP:250 借助精靈的力量迴避危險。在空中使用精靈遊俠的攻擊技能時，按著方向鍵↑、↓、← ,→ 使用的話，就會取消目前使用中的技能，迅速移動到該方向。
+                    <br>●<img src="img(M)/35.png" alt="Jugglypuff" width="10%" height="10%">楓葉祝福
+                    <br>●<img src="img(M)/36.png" alt="Jugglypuff" width="10%" height="10%">楓葉淨化
+
+                </p>
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">超技能</h1>
+                <p>
+                    ●<img src="img(M)/37.png" alt="Jugglypuff" width="10%" height="10%">精靈祝福:消耗 MP300，60 秒內攻擊力提高 80，格擋 100%。 冷卻時間 90 秒
+                    <br>●<img src="img(M)/38.png" alt="Jugglypuff" width="10%" height="10%">憤怒天使:消耗 MP:200 , 對前方 10 個敵人以 400% 傷害攻擊 10 次
+                    <br>可與<img src="img(M)/10.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/28.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/27.png" alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/17.png"
+                        alt="Jugglypuff" width="10%" height="10%"><img src="img(M)/19.png" alt="Jugglypuff" width="10%" height="10%">連技
+                    <br>●<img src="img(M)/39.png" alt="Jugglypuff" width="10%" height="10%">英雄誓言:60 秒內提高 傷害10%。
+
+                </p>
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">五轉技能</h1>
+                <p>
+                    ●<img src="img(M)/40.png" alt="Jugglypuff" width="10%" height="10%">元素精靈:Lv.30 消耗MP:1000，在70秒內，使用自身攻擊技能時進行最高三次的影分身攻擊。 殘影的傷害是原先技能的60%。殘影發動機率90%，每個殘影發動機率遞減20%。 伊修塔爾的殘影機率只有別的殘影的一半。
+                    <br>在此狀態下，每10秒出900% *8的櫻花樹攻擊 使用連技時減少櫻花樹的冷卻時間1秒。冷卻150秒
+                    <br>●<img src="img(M)/41.png" alt="Jugglypuff" width="10%" height="10%">西皮迪亞:消耗MP:1000，45秒騎乘西皮迪亞，格擋+100%、攻擊力%+20%、減傷25%(可減免百分比傷害)。 按技能或空中按跳可發動突進攻擊、按著↑再衝可以斜衝。以1425%攻擊9次。 冷卻150秒
+                    <br>●<img src="img(M)/42.png" alt="Jugglypuff" width="10%" height="10%">伊里加爾的氣息: 消耗MP:150，最多8.5秒內可使用技能，對10名敵人以825%的傷害值連續攻擊6次。後退時可使用，點擊兩次方向鍵 ←← or →→ 可轉換方向。 冷卻120秒
+                </p>
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
+    </div>
+    <div class="w3-third w3-container">
+    </div>
+    </div>
+    <div class="w3-row">
+        <div class="w3-twothird w3-container">
+            <!-- Pagination -->
+            <div class="w3-center w3-padding-32">
+                <div class="w3-bar">
+                    <a class="w3-button w3-black" href="精靈遊俠.html">1</a>
+                    <a class="w3-button w3-hover-black" href="精靈遊俠1.html">2</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <script>
+            // Get the Sidebar
+            var mySidebar = document.getElementById("mySidebar");
+
+            // Get the DIV with overlay effect
+            var overlayBg = document.getElementById("myOverlay");
+
+            // Toggle between showing and hiding the sidebar, and add overlay effect
+            function w3_open() {
+                if (mySidebar.style.display === 'block') {
+                    mySidebar.style.display = 'none';
+                    overlayBg.style.display = "none";
+                } else {
+                    mySidebar.style.display = 'block';
+                    overlayBg.style.display = "block";
+                }
+            }
+
+            // Close the sidebar with the close button
+            function w3_close() {
+                mySidebar.style.display = "none";
+                overlayBg.style.display = "none";
+            }
+        </script>
+
+</body>
+
+</html>

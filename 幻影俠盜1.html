@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>幻影俠盜</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif;
+    }
+    
+    .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+            <a href="狂郎勇士.html" class="w3-bar-item w3-button w3-theme-l1">狂郎勇士</a>
+            <a href="夜光.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">夜光</a>
+            <a href="龍魔導士.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">龍魔導士</a>
+            <a href="精靈遊俠.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">精靈遊俠</a>
+            <a href="幻影俠盜.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">幻影俠盜</a>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <h4 class="w3-bar-item"><b>Menu</b></h4>
+        <a class="w3-bar-item w3-button w3-hover-black" href="index.html">首頁</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="1111.html">相片</a>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">新手技能</h1>
+                <p>
+                    ●<img src="img(P)/技能竊取.png" alt="Jugglypuff" width="10%" height="10%">技能竊取 :可以成為主力或輔助 消耗 MP30，轉換為竊取模式 移動滑鼠指標選擇周圍的冒險家
+                    <br>●<img src="img(P)/技能管理.png" alt="Jugglypuff" width="10%" height="10%">技能管理 :偷來的技能用滑鼠管理。適用冷卻時間30秒 (切換技能時，有30秒的冷卻時間)
+                    <br>●<img src="img(P)/審判.png" alt="Jugglypuff" width="10%" height="10%">審判:消耗MP60，使用時以卡牌對前方敵人發動10次攻擊，30秒內會獲得下列效果之一：
+                    <br><img src="img(P)/命運.png" alt="Jugglypuff" width="10%" height="10%">命運：爆擊率+20%
+                    <br><img src="img(P)/幸運.png" alt="Jugglypuff" width="10%" height="10%">幸運：道具掉落機率+10%
+                    <br><img src="img(P)/耐力.png" alt="Jugglypuff" width="10%" height="10%">守護：狀態耐性+20 屬性耐性+20%
+                    <br><img src="img(P)/噬血.png" alt="Jugglypuff" width="10%" height="10%">吸收：攻擊時吸收傷害的1%恢復自身HP
+                    <br>●<img src="img(P)/幻影斗篷.png" alt="Jugglypuff" width="10%" height="10%">幻影斗篷:消耗MP30，使用時可輸入方向鍵瞬間移動 (箭頭只顯示可以前往的方向) 限制方向鍵輸入次數：3次
+                    <br>●<img src="img(P)/高洞察力.png" alt="Jugglypuff" width="10%" height="10%">高洞察力:敏捷+40，基本迴避率+20%，手藝 20級，觀察力20級
+
+                </p>
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
+
+        <div class="w3-row">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">一轉技能</h1>
+                <p>
+                    ●<img src="img(P)/雙重穿刺.png" alt="Jugglypuff" width="10%" height="10%">雙重穿刺:消耗MP14，以160%傷害攻擊4位敵人2次
+
+                    <br>●<img src="img(P)/盜亦有道I.png" alt="Jugglypuff" width="10%" height="10%">盜亦有道I:利用技能竊取冒險家1轉的主動技能，若該技能有被動效果時就沒被動效果，且竊取的技能等級無法超過20級，竊取技能在傷害上會略微減少，且切換技能有30秒的冷卻時間
+
+                    <br>●<img src="img(P)/幻影瞬步.png" alt="Jugglypuff" width="10%" height="10%">幻影瞬步 :主動效果：消耗MP25，一定距離跳躍 被動效果：移動速度+35，移動速度上限+20，跳躍力+20
+
+                    <br>●<img src="img(P)/快速迴避.png" alt="Jugglypuff" width="10%" height="10%">快速迴避: 基本迴避率+20%
+
+                </p>
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
+        <div class="w3-row">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">二轉技能</h1>
+                <p>
+
+                    ●<img src="img(P)/發牌.png" alt="Jugglypuff" width="10%" height="10%">發牌: 消耗MP21，以170%傷害攻擊4位敵人3次
+
+                    <br>●<img src="img(P)/盜亦有道II.png" alt="Jugglypuff" width="10%" height="10%">盜亦有道II: 利用技能竊取冒險家2轉的主動技能，若該技能有被動效果時就沒被動效果，且竊取的技能等級無法超過20級，竊取技能在傷害上會略微減少，且切換技能有30秒的冷卻時間
+
+                    <br>●<img src="img(P)/楓華吹雪.png" alt="Jugglypuff" width="10%" height="10%">楓華吹雪: 消耗MP40，以320%傷害攻擊前方10位敵人並擊退
+
+                    <br>●<img src="img(P)/炫目卡牌.png" alt="Jugglypuff" width="10%" height="10%">炫目卡牌: 當攻擊造成爆擊時，有60%機率從身上射出卡片攻擊敵人傷害為160%，且能無視敵人的反盾，卡片堆疊數量+1
+
+                    <br>●<img src="img(P)/手杖精通.png" alt="Jugglypuff" width="10%" height="10%">手杖精通: 提升手杖的熟練度50%和命中+200
+
+                    <br>●<img src="img(P)/極速手杖.png" alt="Jugglypuff" width="10%" height="10%">極速手杖: 消耗MP30，240秒內提升手杖攻速2個階段
+
+                    <br>●<img src="img(P)/幸運富翁.png" alt="Jugglypuff" width="10%" height="10%">幸運富翁: 幸運+40
+                </p>
+
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">三轉技能</h1>
+                <p>
+                    ●<img src="img(P)/切排.png" alt="Jugglypuff" width="10%" height="10%">切牌: 消耗MP35，以200%傷害攻擊8位敵人4次
+
+                    <br>●<img src="img(P)/盜亦有道III.png" alt="Jugglypuff" width="10%" height="10%">盜亦有道III: 利用技能竊取冒險家3轉的主動技能，若該技能有被動效果時就沒被動效果，且竊取的技能等級無法超過20級，竊取技能在傷害上會略微減少，且切換技能有30秒的冷卻時間
+
+                    <br>●<img src="img(P)/幸運幻影.png" alt="Jugglypuff" width="10%" height="10%">幸運幻影: 主動效果：消耗MP300，死亡時以技能效果復活，且補滿100%HP並無敵4秒，冷卻時間600秒 被動效果：幸運+60
+
+                    <br>●<img src="img(P)/幸運卡牌守護.png" alt="Jugglypuff" width="10%" height="10%">幸運卡牌守護: 消耗MP80，240秒內MaxHP及MaxMP+30%，屬性及異常狀態抗性+40%
+
+                    <br>●<img src="img(P)/幻影迴避.png" alt="Jugglypuff" width="10%" height="10%">幻影迴避: 迴避率+30%
+
+                    <br>●<img src="img(P)/月光賜福.png" alt="Jugglypuff" width="10%" height="10%">月光賜福: 消耗MP80，240秒內提升物攻+40和命中+200
+
+                    <br>●<img src="img(P)/國文突刺.png" alt="Jugglypuff" width="10%" height="10%">國王突刺: 主動效果：消耗MP40，以270%的衝刺攻擊10位敵人2次，然後以270%的半月攻擊敵人3次 被動效果：楓華吹雪傷害+50%
+
+                    <br>●<img src="img(P)/爆擊天賦.png" alt="Jugglypuff" width="10%" height="10%">爆擊天賦: 爆擊率+35%
+                </p>
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">四轉技能</h1>
+                <p> ●
+
+                    <br>●<img src="img(P)/連犽突進.png" alt="Jugglypuff" width="10%" height="10%">連犽突進: 消耗MP15，以130%傷害攻擊6位敵人2次，攻擊時可按方向鍵←.→移動
+
+                    <br>●<img src="img(P)/盜亦有道IV.png" alt="Jugglypuff" width="10%" height="10%">盜亦有道IV : 利用技能竊取冒險家4轉的主動技能，若該技能有被動效果時就沒被動效果，且竊取的技能等級無法超過30級，竊取技能在傷害上會略微減少，且切換技能有30秒的冷卻時間
+
+                    <br>●<img src="img(P)/死神卡牌.png" alt="Jugglypuff" width="10%" height="10%">死神卡牌: 主動效果：當攻擊造成爆擊時，有100%機率從身上射出卡片攻擊敵人傷害為270%，卡片堆疊數量 +1 被動效果：迴避率+20%
+
+                    <br>●<img src="img(P)/最終的夕陽.png" alt="Jugglypuff" width="10%" height="10%">最終的夕陽:
+                    <br>主動效果：消耗MP50，向後上方跳躍同時以450%傷害攻擊10位敵人3次，且在15秒內有無視防禦20%的效果
+                    <br>被動效果：國王突刺傷害+50%
+
+                    <br>●<img src="img(P)/艾麗亞祝福.png" alt="Jugglypuff" width="10%" height="10%">艾麗亞祝禱: 消耗MP120，240秒內總傷害+30%，無視防禦+30%
+
+                    <br> ●<img src="img(P)/卡牌風暴.png" alt="Jugglypuff" width="10%" height="10%">卡牌風暴: 消耗MP30，持續按壓技能鍵，以400%傷害持續攻擊8位敵人，冷卻時間12秒
+
+                    <br>●<img src="img(P)/進階手杖精通.png" alt="Jugglypuff" width="10%" height="10%">進階手杖精通: 提升手杖的熟練度至70%，攻擊力+40，最小爆擊傷害+15%
+
+                    <br>●<img src="img(P)/靈魂竊取.png" alt="Jugglypuff" width="10%" height="10%">靈魂竊取: 消耗MP60，從周圍最多12個怪物身上竊取效果用在自己身上，偷取到多種效果時，只有效果最好的1種增益生效，怪物沒有增益時，不發生任何效果，竊取到的效果内容如下
+                    <br>攻擊：攻擊+40
+                    <br>防禦：受到的傷害减少40%
+                    <br>反盾：反彈受到的傷害600%
+                    <br>無敵：在一定時間內無敵 冷卻時間：60秒
+
+                    <br>●<img src="img(P)/楓葉祝福.png" alt="Jugglypuff" width="10%" height="10%">楓葉祝福
+
+                    <br>●<img src="img(P)/楓葉淨化.png" alt="Jugglypuff" width="10%" height="10%">楓葉淨化
+                </p>
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">超技能</h1>
+                <p>
+                    <br> ●<img src="img(P)/卡牌強化.png" alt="Jugglypuff" width="10%" height="10%">卡牌風暴-強化加農 傷害+20%
+
+                    <br>●<img src="img(P)/卡牌減少.png" alt="Jugglypuff" width="10%" height="10%">卡牌風暴-減少冷卻時間 冷卻時間減少20%
+
+                    <br>●<img src="img(P)/卡牌臨時.png" alt="Jugglypuff" width="10%" height="10%">卡牌風暴-臨時目標 敵人攻擊數量+2
+
+                    <br>●<img src="img(P)/連犽強化.png" alt="Jugglypuff" width="10%" height="10%">連犽突進-強化加農 傷害+20%
+
+                    <br>●<img src="img(P)/連犽臨時.png" alt="Jugglypuff" width="10%" height="10%">連犽突進-臨時目標 敵人攻擊數量+2
+
+                    <br>●<img src="img(P)/連犽無視.png" alt="Jugglypuff" width="10%" height="10%">連犽突進-無視防禦 無視防禦+20%
+
+                    <br>●<img src="img(P)/幸運免疫.png" alt="Jugglypuff" width="10%" height="10%">幸運卡牌守護-免疫增強 異常狀態抗性和屬性抗性+5%
+
+                    <br>●<img src="img(P)/幸運大血.png" alt="Jugglypuff" width="10%" height="10%">幸運卡牌守護-最大血量 MaxHP+10%
+
+                    <br>●<img src="img(P)/幸運大魔.png" alt="Jugglypuff" width="10%" height="10%">幸運卡牌守護-最大魔法量 MaxMP+10%
+                    <br>●<img src="img(P)/盜亦有道H.png" alt="Jugglypuff" width="10%" height="10%">盜亦有道H : 使用利用技能竊取的其他冒險家的150級神聖加持技能。 技能的有效時間與冷卻時間使用幻影俠盜專屬的數值。 如果是包含被動效果的技能，無法獲得該被動效果。 使用時，依照設定的技能的MP消耗量消耗MP。
+                    <br>●<img src="img(P)/玫瑰四重曲.png" alt="Jugglypuff" width="10%" height="10%">玫瑰四重曲 消耗MP200，卡牌以700%傷害攻擊15位敵人6次並插入地面，特定時間內在地面的卡牌以100%傷害攻擊周圍6位敵人2次，最大攻擊限制(頂傷限制)9,999,999，冷卻時間90秒
+
+                    <br>●<img src="img(P)/英雄誓言.png" alt="Jugglypuff" width="10%" height="10%">英雄誓言 消耗MP100，60秒內自己和隊員的傷害+10%(僅英雄團適用)，最大攻擊限制(頂傷限制)增加50,000，冷卻時間120秒
+
+                </p>
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">五轉技能</h1>
+                <p>
+                    ●<img src="img(P)/命運鬼牌.png" alt="Jugglypuff" width="10%" height="10%">命運鬼牌 每秒消耗MP 1000 最多7秒內朝前方每隔一段時間投擲數個(14張)卡牌，以465%→510%的傷害攻擊1次 攻擊時，減少MaxHP一定比例傷害之被擊傷害-15% 可用移動鍵← →移動 移速50 此技能不會觸發、 停止攻擊後，隨機抽出一張卡牌， 30秒內自身和隊友獲得卡牌BUFF，抽卡牌時為無敵狀態
+                    <br><img src="img(P)/紅十字.png" alt="Jugglypuff" width="10%" height="10%">紅十字：範圍400 MaxHP+15％→16%每秒恢復MaxHP/MaxMP2%
+                    <br><img src="img(P)/生命之樹.png" alt="Jugglypuff" width="10%" height="10%">生命之樹：範圍400 被擊傷害-7%→8％ 異常抗性+22→25
+                    <br><img src="img(P)/沙漏.png" alt="Jugglypuff" width="10%" height="10%">沙漏：範圍400 不受到冷卻時間初始化影響技能除外，冷卻時間-28%→32％
+                    <br><img src="img(P)/銳利的樹.png" alt="Jugglypuff" width="10%" height="10%">銳利的劍：範圍400 最終傷害+5%→6％
+                    <br><img src="img(P)/鬼牌.png" alt="Jugglypuff" width="10%" height="10%">鬼牌：範圍400 一次獲得以上BUFF
+                    <br>冷卻時間 150秒
+                    <br>●<img src="img(P)/黑傑克.png" alt="Jugglypuff" width="10%" height="10%">黑傑克 消耗MP800，丟出一個封印著不祥力量的卡牌，以800%→880％的傷害，彈跳攻擊敵人20次 在彈跳攻擊結束後，封印解除，最多對12名敵人以2000%→2200％的傷害額外攻擊6次 若周圍沒有可彈跳的敵人時，立刻封印解除
+                    <br>冷卻時間15秒
+                    <br>●<img src="img(P)/幻影標記.png" alt="Jugglypuff" width="10%" height="10%">幻影標記 需有敵人成為目標或收集所有怪盜證明才可使用技能 消耗MP1000+所有怪盜證明 移動至目標或範圍內最遠敵人後方進行攻擊 優先攻擊目標敵人 移動開始3秒內為隱身術狀態 避免受到攻擊 以1200％傷害攻擊2次觸發7次後 再以2400％傷害攻擊10次 所有攻擊最多攻擊10名敵人 額外爆擊100％ 手杖的技能擊中敵人時30內留下DEBUFF
+                    最多疊加7層後將視為目標 只會有1名敵人視為目標 範圍內MaxHP最高的敵人優先 以手杖的技能擊中敵人時自身獲得怪盜證明1個 收集7個才能使用幻影標記
+                    <img src="img(P)/連犽突進.png" alt="Jugglypuff" width="10%" height="10%">連犽突進將敵人視為目標或收集怪盜證明 攻擊次數為其他技能的5倍
+                    <br>冷卻時間25秒
+                </p>
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
+    </div>
+    <div class="w3-third w3-container">
+    </div>
+    </div>
+    <div class="w3-row">
+        <div class="w3-twothird w3-container">
+            <!-- Pagination -->
+            <div class="w3-center w3-padding-32">
+                <div class="w3-bar">
+                    <a class="w3-button w3-black" href="幻影俠盜.html">1</a>
+                    <a class="w3-button w3-hover-black" href="幻影俠盜1.html">2</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <script>
+            // Get the Sidebar
+            var mySidebar = document.getElementById("mySidebar");
+
+            // Get the DIV with overlay effect
+            var overlayBg = document.getElementById("myOverlay");
+
+            // Toggle between showing and hiding the sidebar, and add overlay effect
+            function w3_open() {
+                if (mySidebar.style.display === 'block') {
+                    mySidebar.style.display = 'none';
+                    overlayBg.style.display = "none";
+                } else {
+                    mySidebar.style.display = 'block';
+                    overlayBg.style.display = "block";
+                }
+            }
+
+            // Close the sidebar with the close button
+            function w3_close() {
+                mySidebar.style.display = "none";
+                overlayBg.style.display = "none";
+            }
+        </script>
+
+</body>
+
+</html>

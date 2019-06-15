@@ -1,197 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link rel="stylesheet" href="CSS/style_CSS_Selector2.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>新楓之谷角色介紹</title>
-</head>
-
+<title>夜光</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif;
+    }
+    
+    .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+    }
+</style>
 
 <body>
-    <body background="jpg/夜光.png">
 
-    <header>
-        <h1>夜光</h1>
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+            <a href="狂郎勇士.html" class="w3-bar-item w3-button w3-theme-l1">狂郎勇士</a>
+            <a href="夜光.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">夜光</a>
+            <a href="龍魔導士.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">龍魔導士</a>
+            <a href="精靈遊俠.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">精靈遊俠</a>
+            <a href="幻影俠盜.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">幻影俠盜</a>
+        </div>
+    </div>
 
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <h4 class="w3-bar-item"><b>Menu</b></h4>
+        <a class="w3-bar-item w3-button w3-hover-black" href="index.html">首頁</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="1111.html">相片</a>
+    </nav>
 
-        <nav>
-            <ul id="u1">
-                <li><a href="index.html">首頁</a></li>
-                <li><a href="狂郎勇士.html">英雄團介紹</a></li>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-            </ul>
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
 
-        </nav>
-    </header>
-    <article>
-        <nav id="n1">
-            <ul id="u2">
-                <li><a href="狂郎勇士.html">狂郎勇士</a></li>
-                <li><a href="龍魔導士.html">龍魔導士</a></li>
-                <li><a href="夜光.html">夜光</a></li>
-                <li><a href="精靈遊俠.html">精靈游俠</a></li>
-                <li><a href="幻影俠盜.html">幻影俠盜</a></li>
-            </ul>
-
-        </nav>
-        <section id="sec1">
-            <h2>基本介紹</h2>
-
-            <p>
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">基本介紹</h1>
                 職業分類:英雄團、法師類
                 <br>閃耀克魯（主武器）：單手武器、熟練度25%、武器係數1.2。卡勒馬彈（副武器）：限定夜光套用，分類至夜光彈。
                 <br> 主屬性：智力
                 <br> 擁有獨特的平衡系統．
-            </p>
-        </section>
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
 
-        <section id="sec2">
-            <h2>優勢</h2>
-            <p>
-                1.在特定狀態下使用特定技能會增加傷害．
-                <br>2.爆發傷害高
-                <br>3.光狀態使用光魔法攻擊可回復HP1%，且以50%最終傷害追打。
-                <br>4.暗狀態使用暗魔法攻擊消耗MP為0，且以50%最終傷害追打。
-                <br>5.平衡狀態10秒內格擋提升至100%(加持可疊加)，有著光暗蝕兩種增益，使用均衡魔法時，以100%最終傷害追打。
-                <br>6.練等速度快
-                <br>7.本身不需無視，三武可洗％魔．
-            </p>
+        <div class="w3-row">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">優勢</h1>
+                <p>
+                    1.在特定狀態下使用特定技能會增加傷害．
+                    <br>2.爆發傷害高
+                    <br>3.光狀態使用光魔法攻擊可回復HP1%，且以50%最終傷害追打。
+                    <br>4.暗狀態使用暗魔法攻擊消耗MP為0，且以50%最終傷害追打。
+                    <br>5.平衡狀態10秒內格擋提升至100%(加持可疊加)，有著光暗蝕兩種增益，使用均衡魔法時，以100%最終傷害追打。
+                    <br>6.練等速度快
+                    <br>7.本身不需無視，三武可洗％魔．
+                </p>
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
+        <div class="w3-row">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">弱勢</h1>
+                <p>
+                    1.爆發時間視平衡時間為定
+                    <br>2.平衡時間需靠蒙獸加持或戰地
+                    <br>3.瞬移跟殘廢一樣
+                </p>
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">傳授技能</h1>
+                <p>
+                    ●<img src="img/滲透.jpg" alt="Jugglypuff" width="10%" height="10%">滲透：
+                    <br>70等：無視防禦+10%
+                    <br>120等；無視防禦+15%
+                </p>
+            </div>
+            <div class="w3-third w3-container">
+            </div>
+        </div>
 
-        </section>
-        <section id="secˇ">
-            <h2>弱勢</h2>
-            <p>
-                1.爆發時間視平衡時間為定
-                <br>2.平衡時間需靠蒙獸加持或戰地
-                <br>3.瞬移跟殘廢一樣
-            </p>
-
-
-        </section>
-        <section id="secˇ">
-            <h2>傳授技能</h2>
-            <p>
-                ●<img src="img/滲透.jpg" alt="Jugglypuff" width="10%" height="10%">滲透：
-                <br>70等：無視防禦+10%
-                <br>120等；無視防禦+15%
-            </p>
-
-
-        </section>
-
-        <section id="secˇ">
-            <h2>新手技能</h2>
-            <p>●<img src="img/光蝕.png" alt="Jugglypuff" width="40%" height="40%"> 光蝕:使用光技能時追加50%傷害，並且回復1%HP。
-                <br>●<img src="img/暗蝕.png" alt="Jugglypuff" width="10%" height="10%">暗蝕:使用暗技能時追加50%傷害，並且不需要消耗MP。
-                <br>●<img src="img/滲透.png" alt="Jugglypuff" width="10%" height="10%">滲透:攻擊怪物無視怪物的防禦力10%。
-                <br>●<img src="img/平衡.png" alt="Jugglypuff" width="10%" height="10%">平衡:10秒內格擋100%，使用平衡技能時追加100%傷害，使用光技能時追加50%傷害，並且回復1%HP 使用暗技能時追加50%傷害，並且不需要消耗MP。
-                <br>●<img src="img/星光瞬移.png" alt="Jugglypuff" width="10%" height="10%">星光瞬移:瞬間移動到所見最近的怪物位置，在村莊等非打怪地圖則是隨機瞬移。
-                <br>●<img src="img/光明力量.png" alt="Jugglypuff" width="10%" height="10%">光明力量:意志、洞察直接提升至20級，智力增加20，升級時提高MP增加量，永久對黑暗免疫。
-
-            </p>
-
-
-        </section>
-        <section id="secˇ">
-            <h2>一轉技能</h2>
-            <p>
-                ●<img src="img/星星閃光.jpg" alt="Jugglypuff" width="10%" height="10%">星星閃光[光](依據光/暗路選擇而決定技能):對前方的五位敵人攻擊一次。
-                <br>●<img src="img/黑暗球體.jpg" alt="Jugglypuff" width="10%" height="10%">黑暗球體[闇](依據光/暗路選擇而決定技能):對前方的六位敵人攻擊三次。
-                <br>●<img src="img/星光瞬步.jpg" alt="Jugglypuff" width="10%" height="10%">閃光瞬步:即瞬間移動。與法師瞬間移動不同的是順移時附帶隱形暫時無敵，且範圍較廣。
-                <br>●<img src="img/魔心防禦.jpg" alt="Jugglypuff" width="10%" height="10%">魔法防禦:即法師的魔心防禦被動版本。所受到傷害的85%以MP代替，若無可替代的MP則直接減少HP。
-                <br>●<img src="img/擴充魔力.jpg" alt="Jugglypuff" width="10%" height="10%">補充魔力:增加30%的MP。
-                <br>●<img src="img/光魔法強化.jpg" alt="Jugglypuff" width="10%" height="10%">光魔法強化:光系列魔法攻擊增加5%傷害。
-                <br>●<img src="img/暗魔法強化.jpg" alt="Jugglypuff" width="10%" height="10%">暗魔法強化:暗系列魔法攻擊增加5%傷害。
-            </p>
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a class="w3-button w3-black" href="夜光.html">1</a>
+                <a class="w3-button w3-hover-black" href="夜光1.html">2</a>
+            </div>
+        </div>
 
 
-        </section>
-        <section id="secˇ">
-            <h2>二轉技能</h2>
-            <p>
-                ●<img src="img/光明長槍.jpg" alt="Jugglypuff" width="10%" height="10%">光明長槍[光]:攻擊六位怪物四次。
-                <br>●<img src="img/光柱爆發.jpg" alt="Jugglypuff" width="10%" height="10%">光柱爆發[光]:最多將十位怪物往左右彈開，為推怪技能。
-                <br>●<img src="img/黑暗之眼.jpg" alt="Jugglypuff" width="10%" height="10%">黑暗之眼[闇]:攻擊8位敵人。按住不放會持續攻擊，攻擊方向用←→按鍵調整。
-                <br>●<img src="img/黑暗祝福.jpg" alt="Jugglypuff" width="10%" height="10%">黑暗祝福:三秒未遭受傷害則增加一顆球；受到傷害則以一顆球減少70%傷害。
-                <br>●<img src="img/極速詠唱.jpg" alt="Jugglypuff" width="10%" height="10%">極速詠唱:180秒內提升攻擊速度2階段。
-                <br>●<img src="img/咒語精通.jpg" alt="Jugglypuff" width="10%" height="10%">咒語精通:提高閃亮克魯熟練度50%，且增加10魔攻。
-                <br>●<img src="img/智慧昇華.jpg" alt="Jugglypuff" width="10%" height="10%">智慧昇華:永久提高智力40。
-            </p>
+    </div>
 
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
 
-        </section>
-        <section id="secˇ">
-            <h2>三轉技能</h2>
-            <p>
-                ●<img src="img/光箭.jpg" alt="Jugglypuff" width="10%" height="10%">光箭[光]:攻擊八位敵人4次，可利用方向鍵轉換方向，按住技能鍵不放可持續攻擊。
-                <br>●<img src="img/閃亮救贖.jpg" alt="Jugglypuff" width="10%" height="10%">閃亮救贖[光]:對六位敵人造成三次傷害，且可回復自己的HP。
-                <br>●<img src="img/黑暗之錨.jpg" alt="Jugglypuff" width="10%" height="10%">黑暗之錨[闇]:對六位敵人造成兩次傷害。
-                <br>●<img src="img/死神鐮刀.jpg" alt="Jugglypuff" width="10%" height="10%">死神鐮刀[平衡]:對十位敵人造成六次的強大傷害。
-                <br>●<img src="img/魔力護盾.jpg" alt="Jugglypuff" width="10%" height="10%">魔力護盾:被動增加40%所有屬性及異常狀態抗性，主動可無視異常狀態三次，
-                <br>●<img src="img/光暗之盾.jpg" alt="Jugglypuff" width="10%" height="10%">光暗之盾:增加物理/魔法防禦300，且20%機率無視傷害。
-                <br>●<img src="img/團隊精神.jpg" alt="Jugglypuff" width="10%" height="10%">團隊精神:對自己及團隊成員增加40魔攻。
-                <br>●<img src="img/光暗轉換.jpg" alt="Jugglypuff" width="10%" height="10%">光暗轉換:當MP比率大於HP比率時傷害+20% 當MP比率小於HP小比率時爆擊+30%
-            </p>
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
 
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
 
-        </section>
-        <section id="secˇ">
-            <h2>四轉技能</h2>
-            <p>
-                ●<img src="img/極速反射.jpg" alt="Jugglypuff" width="10%" height="10%">急速反射[光] :對周圍最多八位敵人造成四次傷害。
-                <br>●<img src="img/晨星殞落.jpg" alt="Jugglypuff" width="10%" height="10%">晨星隕落[闇]:對八位敵人造成傷害，且會擊退怪物，攻擊後爆炸再產生一次傷害。
-                <br>●<img src="img/暗黑烈焰.jpg" alt="Jugglypuff" width="10%" height="10%">暗黑烈焰[闇]:對八位敵人造成七次傷害。
-                <br>●<img src="img/絕對擊殺.jpg" alt="Jugglypuff" width="10%" height="10%">絕對擊殺[平衡]:攻擊時對一般怪物最多2體秒殺，不適用即死的怪物或者BOSS則是造成七次傷害並且附加40%無視防禦效果。
-                <br>●<img src="img/黑暗強化.jpg" alt="Jugglypuff" width="10%" height="10%">黑暗強化:180秒內攻擊成功時有80%機率傷害增加1%，施放此技能後疊加效果會重置，最多重疊15次。
-                <br>●<img src="img/黑暗魔新.jpg" alt="Jugglypuff" width="10%" height="10%">黑暗魔心:180秒內無視怪物防禦40%、無視怪物屬性抗性100%
-                <br>●<img src="img/精通魔法.jpg" alt="Jugglypuff" width="10%" height="10%">精通魔法:提高閃亮克魯熟練度至70%，且增加30魔攻、增加爆擊最小傷害15%。
-                <br>●<img src="img/光暗精通.jpg" alt="Jugglypuff" width="10%" height="10%">光暗精通:平衡狀態時間增加7秒。減少光蝕/暗蝕之間切換的時間，再追加死神鐮刀傷害100%
-                <br>●<img src="img/楓葉祝福.jpg" alt="Jugglypuff" width="10%" height="10%">楓葉祝福:對自己和所有成員提升所有的屬性15%。
-                <br>●<img src="img/楓葉淨化.jpg" alt="Jugglypuff" width="10%" height="10%">楓葉淨化:解除異常狀態。
-
-
-            </p>
-
-
-        </section>
-        <section id="secˇ">
-            <h2>超技能</h2>
-            <p>
-                ●<img src="img/提高射程.jpg" alt="Jugglypuff" width="10%" height="10%">(P)極速反射-強化加農：增加總傷20%。
-                <br>●<img src="img/提高射程.jpg" alt="Jugglypuff" width="10%" height="10%">(P)極速反射-提高射程：提高射程50。
-                <br>●<img src="img/釋放.jpg" alt="Jugglypuff" width="10%" height="10%">(P)極速反射-釋放：傷害轉移減少量減少至0%。
-                <br>●<img src="img/暗強化加農.jpg" alt="Jugglypuff" width="10%" height="10%">(P)暗黑烈焰-強化加農：增加總傷20%。
-                <br>●<img src="img/臨時目標.jpg" alt="Jugglypuff" width="10%" height="10%">(P)暗黑烈焰-臨時目標：最大目標量增加2。
-                <br>●<img src="img/靈魂充能.jpg" alt="Jugglypuff" width="10%" height="10%">(P)暗黑烈焰-靈魂充能：提高蓄能量。
-                <br>●<img src="img/擊殺強化加農.jpg" alt="Jugglypuff" width="10%" height="10%">(P)絕對擊殺-強化加農：增加總傷20%。
-                <br>●<img src="img/擊殺提高射程.jpg" alt="Jugglypuff" width="10%" height="10%">(P)絕對擊殺-提高射程：提高射程40。
-                <br>●<img src="img/擊殺臨時目標.jpg" alt="Jugglypuff" width="10%" height="10%">(P)絕對擊殺-臨時目標：最大目標量增加1。
-                <br>●<img src="img/重啟平衡.jpg" alt="Jugglypuff" width="10%" height="10%">重啟平衡(140)：進入平衡狀態。*無法加持延長
-                <br>●<img src="img/末日審判.jpg" alt="Jugglypuff" width="10%" height="10%">末日審判(160)：最多綁15名敵人，傷害越高綁越久。
-                <br>●<img src="img/英雄誓言.jpg" alt="Jugglypuff" width="10%" height="10%">英雄誓言(190)：60秒內傷害增加10%。*英雄團隊員可共享
-
-
-            </p>
-
-
-        </section>
-        <section id="secˇ">
-            <h2>五轉技能</h2>
-            <p>
-                ●<img src="img/真理之門.jpg" alt="Jugglypuff" width="10%" height="10%">真理之門(V1)：37秒內，每五秒向12名敵人攻擊10次
-                <br>●<img src="img/混沌共鳴.jpg" alt="Jugglypuff" width="10%" height="10%">混沌共鳴(V2)：6秒內向10名敵人攻擊。 (光蝕 ：週期性攻擊四次；暗蝕：週期性攻擊五次；平衡：週期性攻擊六次。)
-                <br>●<img src="img/光與暗的洗禮.jpg" alt="Jugglypuff" width="10%" height="10%">光與暗的洗禮(V3)：發動十三次的七次攻擊，使用絕對擊殺可獲得一把意志之劍，十二把可重置CD。*爆擊率、無視防禦率100%
-
-
-            </p>
-
-
-        </section>
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
 
 </body>
 
